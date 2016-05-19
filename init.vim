@@ -39,6 +39,7 @@ syntax on
 set ruler
 set number
 set scrolloff=1
+set colorcolumn=80
 
 "Make cursor pipe when editing
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
