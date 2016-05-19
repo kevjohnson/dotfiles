@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim'
 Plug 'tomasr/molokai'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ctrlpvim/ctrp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 "Required
