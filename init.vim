@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim'
 Plug 'tomasr/molokai'
 Plug 'jiangmiao/auto-pairs'
+Plug 'ctrlpvim/ctrp.vim'
 call plug#end()
 
 "Required
@@ -52,3 +53,25 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Nvim-R options
 let R_assign=0
+
+"Airline options
+let g:airline#extensions#tabline#enabled = 2
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#right_sep = ' '
+let g:airline#extensions#tabline#right_alt_sep = '|'
+let g:airline_left_sep = ' '
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = ' '
+let g:airline_right_alt_sep = '|'
+let g:airline_theme= 'serene'
+
+"Shortcuts
+let mapleader="\<SPACE>"
+" Open file menu
+nnoremap <Leader>o :CtrlP<CR>
+" Open buffer menu
+nnoremap <Leader>b :CtrlPBuffer<CR>
+" Open most recently used files
+nnoremap <Leader>f :CtrlPMRUFiles<CR>
