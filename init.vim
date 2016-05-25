@@ -79,3 +79,8 @@ nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR>
 " Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+"Git shortcuts
+nnoremap <Leader>ga :Gwrite<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gp :Git push<CR>
