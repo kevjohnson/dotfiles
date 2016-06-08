@@ -86,3 +86,7 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <Leader>ga :Gwrite<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gp :Git push<CR>
+
+"Pandoc settings
+let g:pandoc#formatting#mode='hA'
+let g:pandoc#formatting#smart_autoformat_on_cursormoved=1
