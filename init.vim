@@ -14,6 +14,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 "Required
@@ -39,7 +40,9 @@ set ignorecase
 set smartcase
 
 "Visual settings
-colorscheme molokai
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set background=dark
+colorscheme gruvbox
 syntax on
 set ruler
 set number
